@@ -1,0 +1,98 @@
+#nota entre 0 e 10
+nota=-1
+while nota <0 or nota > 10:
+    nota= float(input("Digite uma nota entre 0 e 10: "))
+    if nota < 0 or nota > 10:
+        print("valor invalido")
+print("nota valida registrada")
+
+#senha exer.2
+senha_correta = "0304"
+tentativa = ""
+while tentativa != senha_correta:
+    tentativa = input("Digite a senha: ")
+    if tentativa != senha_correta:
+        print("Senha incorreta! Tente novamente.")
+print("Acesso liberado!")
+
+#exer.3
+n = int(input("Digite um número inteiro positivo: "))
+contador = 1
+while contador <= n:
+    print(contador)
+    contador = contador + 1
+
+#exer.4
+soma=0
+numero=0
+while numero >= 0:
+    numero = int(input("Digite um número (negativo para sair): "))
+    if numero >= 0:
+        soma = soma + numero
+print("A soma total é:", soma)
+
+#exer.5
+numero = -1
+while numero != 0:
+    numero = int(input("Digite um número (0 para parar): "))
+    if numero != 0:
+        if numero % 2 == 0:
+            print("O número é Par")
+        else:
+            print("O número é Ímpar")
+#obs: %descobrir  o reto da divisão
+
+#exer.6
+maior = 0
+numero = -1
+while numero != 0:
+    numero = int(input("Digite um número (0 para parar): "))
+    if numero > maior:
+        maior = numero
+print("O maior número digitado foi:", maior)
+
+#exer.7
+soma_notas = 0
+quantidade = 0
+nota = 0
+while nota != -1:
+    nota = float(input("Digite a nota (-1 para encerrar): "))
+    if nota != -1:
+        soma_notas = soma_notas + nota
+        quantidade = quantidade + 1
+
+if quantidade > 0:
+    media = soma_notas / quantidade
+    print("A média das notas é:", media)
+
+    #exer.8
+    num = int(input("Deseja a tabuada de qual número? "))
+i = 1
+while i <= 10:
+    resultado = num * i
+    print(num, "x", i, "=", resultado)
+    i = i + 1
+
+
+#exer.9
+positos = 0
+negativos = 0
+num = -1
+while num != 0:
+    num = int(input("Digite um número (0 para sair): "))
+    if num > 0:
+        positos = positos + 1
+    elif num < 0:
+        negativos = negativos + 1
+print("Positivos:", positos, "| Negativos:", negativos)
+
+#exer.10
+numero_correto = 42
+palpite = 0
+while palpite != numero_correto:
+    palpite = int(input("Adivinhe o número: "))
+    if palpite < numero_correto:
+        print("Muito baixo!")
+    elif palpite > numero_correto:
+        print("Muito alto!")
+print("Parabéns! Você acertou.")
