@@ -1,40 +1,397 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>StudyFlow</title>
+
+    <meta name="description"
+        content="StudyFlow - organizador de rotina universitária para disciplinas, tarefas, provas e estudos.">
+
+    <title>StudyFlow - Organizador de Rotina Universitária</title>
 </head>
+
 <body>
 
     <header>
         <h1>StudyFlow</h1>
         <p>Organizador de Rotina Universitária</p>
+
+        <nav aria-label="Navegação principal">
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#disciplinas">Disciplinas</a></li>
+                <li><a href="#tarefas">Tarefas</a></li>
+                <li><a href="#provas">Provas</a></li>
+                <li><a href="#estudos">Estudos</a></li>
+                <li><a href="#cadastro">Cadastro</a></li>
+                <li><a href="#recursos">Recursos</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
-        <section>
-            <h2>Sobre o Projeto</h2>
+
+        <section id="inicio">
+            <h2>Organize sua vida acadêmica</h2>
+
             <p>
-                O StudyFlow é um sistema desenvolvido para ajudar estudantes
-                universitários a organizar disciplinas, tarefas, provas e horários de estudo.
+                O StudyFlow é uma ferramenta criada para ajudar estudantes
+                universitários a organizar disciplinas, tarefas, provas
+                e horários de estudo em um único lugar.
+            </p>
+
+            <p>
+                Planeje sua rotina acadêmica, acompanhe suas atividades
+                e mantenha seus estudos organizados.
             </p>
         </section>
 
-        <section>
-            <h2>Funcionalidades Futuras</h2>
+        <section id="sobre">
+            <h2>Sobre o StudyFlow</h2>
+
+            <p>
+                O StudyFlow é um projeto acadêmico desenvolvido com o
+                objetivo de facilitar a organização da rotina universitária.
+            </p>
+
+            <p>
+                A proposta é reunir informações importantes da vida
+                acadêmica em uma estrutura simples, organizada e acessível.
+            </p>
+
+            <h3>Objetivos</h3>
+
             <ul>
-                <li>Cadastro de disciplinas</li>
-                <li>Lista de tarefas</li>
-                <li>Calendário de provas</li>
-                <li>Planejamento de estudos</li>
+                <li>Organizar as disciplinas do semestre.</li>
+                <li>Acompanhar tarefas e trabalhos.</li>
+                <li>Registrar datas de provas.</li>
+                <li>Planejar horários de estudo.</li>
+                <li>Acompanhar atividades concluídas.</li>
             </ul>
         </section>
+
+        <section id="disciplinas">
+            <h2>Minhas Disciplinas</h2>
+
+            <article>
+                <h3>Desenvolvimento Web</h3>
+
+                <p>
+                    Estudo de desenvolvimento de páginas e aplicações
+                    para a Web.
+                </p>
+
+                <p>
+                    <strong>Professor:</strong> Professor da disciplina
+                </p>
+
+                <p>
+                    <strong>Horário:</strong> Segunda-feira, 19h
+                </p>
+            </article>
+
+            <article>
+                <h3>Banco de Dados</h3>
+
+                <p>
+                    Estudo sobre armazenamento, organização e gerenciamento
+                    de informações.
+                </p>
+
+                <p>
+                    <strong>Professor:</strong> Professor da disciplina
+                </p>
+
+                <p>
+                    <strong>Horário:</strong> Terça-feira, 19h
+                </p>
+            </article>
+
+            <article>
+                <h3>Engenharia de Software</h3>
+
+                <p>
+                    Estudo de conceitos relacionados ao planejamento,
+                    desenvolvimento e manutenção de sistemas.
+                </p>
+
+                <p>
+                    <strong>Professor:</strong> Professor da disciplina
+                </p>
+
+                <p>
+                    <strong>Horário:</strong> Quarta-feira, 19h
+                </p>
+            </article>
+        </section>
+
+        <section id="tarefas">
+            <h2>Minhas Tarefas</h2>
+
+            <article>
+                <h3>Tarefas pendentes</h3>
+
+                <ul>
+                    <li>
+                        <strong>Atividade de HTML</strong>
+                        <p>
+                            Desenvolver uma página utilizando HTML semântico.
+                        </p>
+                    </li>
+
+                    <li>
+                        <strong>Pesquisa de Banco de Dados</strong>
+                        <p>
+                            Pesquisar conceitos básicos de banco de dados.
+                        </p>
+                    </li>
+
+                    <li>
+                        <strong>Trabalho de Engenharia de Software</strong>
+                        <p>
+                            Preparar a primeira etapa do trabalho.
+                        </p>
+                    </li>
+                </ul>
+            </article>
+
+            <article>
+                <h3>Tarefas concluídas</h3>
+
+                <ul>
+                    <li>Criação da estrutura inicial do StudyFlow.</li>
+                    <li>Organização do projeto HTML.</li>
+                </ul>
+            </article>
+        </section>
+
+        <section id="provas">
+            <h2>Calendário de Provas</h2>
+
+            <table>
+                <caption>Próximas avaliações acadêmicas</caption>
+
+                <thead>
+                    <tr>
+                        <th scope="col">Disciplina</th>
+                        <th scope="col">Data</th>
+                        <th scope="col">Horário</th>
+                        <th scope="col">Conteúdo</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Desenvolvimento Web</td>
+                        <td>10/09/2026</td>
+                        <td>19h</td>
+                        <td>HTML e estrutura de páginas</td>
+                    </tr>
+
+                    <tr>
+                        <td>Banco de Dados</td>
+                        <td>15/09/2026</td>
+                        <td>19h</td>
+                        <td>Modelagem de dados</td>
+                    </tr>
+
+                    <tr>
+                        <td>Engenharia de Software</td>
+                        <td>20/09/2026</td>
+                        <td>19h</td>
+                        <td>Processos de desenvolvimento</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="estudos">
+            <h2>Planejamento de Estudos</h2>
+
+            <article>
+                <h3>Segunda-feira</h3>
+                <p>
+                    19h às 20h30 — Desenvolvimento Web
+                </p>
+            </article>
+
+            <article>
+                <h3>Terça-feira</h3>
+                <p>
+                    19h às 20h30 — Banco de Dados
+                </p>
+            </article>
+
+            <article>
+                <h3>Quarta-feira</h3>
+                <p>
+                    19h às 20h30 — Engenharia de Software
+                </p>
+            </article>
+
+            <article>
+                <h3>Quinta-feira</h3>
+                <p>
+                    19h às 20h30 — Revisão das disciplinas
+                </p>
+            </article>
+
+            <article>
+                <h3>Sexta-feira</h3>
+                <p>
+                    19h às 20h — Organização das tarefas da próxima semana
+                </p>
+            </article>
+        </section>
+
+        <section id="cadastro">
+            <h2>Cadastrar Nova Atividade</h2>
+
+            <form action="#" method="post">
+
+                <fieldset>
+                    <legend>Informações da atividade</legend>
+
+                    <p>
+                        <label for="atividade">
+                            Nome da atividade:
+                        </label>
+
+                        <input
+                            type="text"
+                            id="atividade"
+                            name="atividade"
+                            required
+                        >
+                    </p>
+
+                    <p>
+                        <label for="disciplina">
+                            Disciplina:
+                        </label>
+
+                        <select
+                            id="disciplina"
+                            name="disciplina"
+                            required
+                        >
+                            <option value="">
+                                Selecione uma disciplina
+                            </option>
+
+                            <option value="desenvolvimento-web">
+                                Desenvolvimento Web
+                            </option>
+
+                            <option value="banco-de-dados">
+                                Banco de Dados
+                            </option>
+
+                            <option value="engenharia-software">
+                                Engenharia de Software
+                            </option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="tipo">
+                            Tipo de atividade:
+                        </label>
+
+                        <select
+                            id="tipo"
+                            name="tipo"
+                            required
+                        >
+                            <option value="">
+                                Selecione o tipo
+                            </option>
+
+                            <option value="tarefa">
+                                Tarefa
+                            </option>
+
+                            <option value="trabalho">
+                                Trabalho
+                            </option>
+
+                            <option value="prova">
+                                Prova
+                            </option>
+
+                            <option value="estudo">
+                                Estudo
+                            </option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="data">
+                            Data:
+                        </label>
+
+                        <input
+                            type="date"
+                            id="data"
+                            name="data"
+                            required
+                        >
+                    </p>
+
+                    <p>
+                        <label for="descricao">
+                            Descrição:
+                        </label>
+
+                        <textarea
+                            id="descricao"
+                            name="descricao"
+                            rows="5"
+                            cols="40"
+                            placeholder="Digite uma descrição da atividade."
+                        ></textarea>
+                    </p>
+
+                    <button type="submit">
+                        Cadastrar atividade
+                    </button>
+
+                </fieldset>
+
+            </form>
+        </section>
+
+        <section id="recursos">
+            <h2>Recursos do StudyFlow</h2>
+
+            <p>
+                O projeto foi planejado para futuramente oferecer:
+            </p>
+
+            <ul>
+                <li>Cadastro e gerenciamento de disciplinas.</li>
+                <li>Controle de tarefas.</li>
+                <li>Calendário acadêmico.</li>
+                <li>Planejamento de estudos.</li>
+                <li>Acompanhamento de atividades concluídas.</li>
+                <li>Recursos multimídia para auxiliar nos estudos.</li>
+            </ul>
+        </section>
+
     </main>
 
     <footer>
-        <p>Projeto acadêmico ADS</p>
+        <p>
+            &copy; 2026 StudyFlow - Projeto acadêmico.
+        </p>
+
+        <address>
+            Desenvolvido para fins acadêmicos.
+        </address>
     </footer>
 
 </body>
+
 </html>
