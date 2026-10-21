@@ -1,0 +1,146 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudyFlow</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <aside class="sidebar">
+        <h2>StudyFlow</h2>
+        <p>Meu Plano de Estudos</p>
+
+        <nav>
+            <a href="#dashboard"> Dashboard</a>
+            <a href="#disciplinas"> Disciplinas</a>
+            <a href="#anotacoes"> Anotações</a>
+            <a href="#revisao"> Revisão</a>
+            <a href="#estatisticas"> Estatísticas</a>
+        </nav>
+    </aside>
+
+    <main class="conteudo">
+
+        <header>
+            <h1>Dashboard</h1>
+            <p>Organize seus estudos e alcance seus objetivos!</p>
+        </header>
+
+        <section class="estatisticas" id="estatisticas">
+
+            <div class="cartao azul">
+                <h2 id="totalDisciplinas">0</h2>
+                <p>Total de Disciplinas</p>
+            </div>
+
+            <div class="cartao rosa">
+                <h2 id="totalTarefas">0</h2>
+                <p>Tarefas Concluídas</p>
+            </div>
+
+            <div class="cartao ciano">
+                <h2 id="horasEstudo">0.0</h2>
+                <p>Horas de Estudo</p>
+            </div>
+
+            <div class="cartao verde">
+                <h2 id="progresso">0%</h2>
+                <p>Progresso</p>
+            </div>
+
+        </section>
+
+        <section class="sequencia">
+            <h3> Sequência de Estudos</h3>
+            <p>Continue estudando todos os dias!</p>
+        </section>
+
+        <section class="calendario">
+            <h3>Calendário Semanal</h3>
+
+            <div class="dias">
+                <div>Dom</div>
+                <div>Seg</div>
+                <div>Ter</div>
+                <div>Qua</div>
+                <div>Qui</div>
+                <div>Sex</div>
+                <div>Sáb</div>
+            </div>
+        </section>
+
+        <section class="pomodoro">
+            <h3>Pomodoro Timer</h3>
+
+            <div class="temporizador">
+                <p>Hora de se concentrar!</p>
+
+                <h2 id="tempo">25:00</h2>
+
+                <button id="iniciar">▶ Iniciar</button>
+                <button id="pausar">⏸ Pausar</button>
+                <button id="reiniciar">↻ Reiniciar</button>
+            </div>
+        </section>
+
+        
+<section id="disciplinas">
+    <h3> Minhas Disciplinas</h3>
+    <p>Cadastre as matérias que você está estudando.</p>
+
+    <form id="form-disciplina">
+        <input
+            type="text"
+            id="nome-disciplina"
+            placeholder="Nome da disciplina"
+            required
+        >
+        <button type="submit">+ Adicionar</button>
+    </form>
+
+    <ul id="lista-disciplinas"></ul>
+</section>
+
+
+        
+<section id="tarefas">
+    <h3>Minhas Tarefas</h3>
+    <p>Organize suas atividades e acompanhe seu progresso.</p>
+
+    <form id="form-tarefa">
+        <input
+            type="text"
+            id="nome-tarefa"
+            placeholder="Digite uma tarefa"
+            required
+        >
+        <button type="submit">Adicionar tarefa</button>
+    </form>
+
+    <ul id="lista-tarefas"></ul>
+</section>
+
+<section id="anotacoes">
+    <h3>Minhas Anotações</h3>
+    <p>Espaço reservado para suas anotações de estudo.</p>
+</section>
+
+
+        <section id="revisao">
+            <h3>Revisão de Conteúdos</h3>
+            <p>Organize os conteúdos que precisa revisar.</p>
+        </section>
+
+        <footer>
+            <p>StudyFlow | Projeto acadêmico de ADS</p>
+        </footer>
+
+    </main>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
